@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: #be185d;
+    color: aliceblue;
+}
+label {
+    display: block;
+    padding: 1rem;
+font-weight: 550;
+
+}
+
+#initial-price {
+border: .1rem solid aliceblue;
+border-radius: .3rem;
+background: aliceblue;
+padding: .5rem 1rem;
+}
+
+#stock-quantity {
+border: .1rem solid aliceblue;
+border-radius: .3rem;
+background: aliceblue;
+padding: .5rem 1rem;
+}
+
+#current-price{
+    border: .1rem solid aliceblue;
+    border-radius: .3rem;
+    background: aliceblue;
+    padding: .5rem 1rem;   
+}
+
+#submit-btn {
+    border: .1rem solid aliceblue;
+    border-radius: .3rem;
+    background: aliceblue;
+    padding: .5rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
