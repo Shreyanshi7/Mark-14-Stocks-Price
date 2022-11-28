@@ -17,14 +17,13 @@ function submitHandler() {
 
 function calculateProfitAndLoss(initial, quantity, current) {
     if(initial > current) {
-        var loss = (initial * current) * quantity;
-        var lossPercentage = ((loss/(initial * current)) * 100);
-        
+        var loss = (initial - current ) * quantity
+        var lossPercentage = ((loss/(initial * quantity)) * 100)
 
         showOutput(`😵 Ohhh the loss is ${loss} and the percentage is ${lossPercentage} %`);
     }else if(current > initial) {
-        var profit = (current * initial) * quantity;
-        var profitPercentage = ((profit/(initial * current)) * 100);
+        var profit = (current - initial) * quantity
+        var profitPercentage = ((profit/(initial * quantity)) * 100)
 
         showOutput(`🤩 Wow  the profit is ${profit} and the percentage is ${profitPercentage} %`);
     }else{
