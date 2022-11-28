@@ -18,7 +18,8 @@ function submitHandler() {
 function calculateProfitAndLoss(initial, quantity, current) {
     if(initial > current) {
         var loss = (initial - current) * quantity;
-        var lossPercentage = (loss / initial) * 100;
+        var lossPercentage = (initial - current) * 100;
+        
 
         showOutput(`😵 Ohhh the loss is ${loss} and the percentage is ${lossPercentage} %`);
     }else if(current > initial) {
